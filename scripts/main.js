@@ -5,18 +5,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //array of images
     const imageArray = [
-        'https://raw.githubusercontent.com/mariabuitsan/debt-disobedience/refs/heads/main/assets/img/bankruptcy-meme.png',
-        'https://raw.githubusercontent.com/mariabuitsan/guaqueras-y-campesinas/refs/heads/main/assets/img/background-1-fura-y-tena-blanco-negro.JPG',
-        'https://raw.githubusercontent.com/mariabuitsan/debt-disobedience/refs/heads/main/assets/img/cant_wont_square_2__100__gallery.png',
-        'https://raw.githubusercontent.com/mariabuitsan/debt-disobedience/refs/heads/main/assets/img/betty-la-fea-patricia-fernandez.gif',
-        'https://raw.githubusercontent.com/mariabuitsan/debt-disobedience/refs/heads/main/assets/img/money-i-used-to-owe.jpeg',
+        '/Users/mariabuitragosanchez/Desktop/Fall-2024/Thesis/guaqueras-y-campesinas/assets/img/agricultora-cafe-1.png',
+        '/Users/mariabuitragosanchez/Desktop/Fall-2024/Thesis/guaqueras-y-campesinas/assets/img/agricultora-caña-objeto-1.png',
+        '/Users/mariabuitragosanchez/Desktop/Fall-2024/Thesis/guaqueras-y-campesinas/assets/img/agricultora-caña-objeto-1.png',
+        '/Users/mariabuitragosanchez/Desktop/Fall-2024/Thesis/guaqueras-y-campesinas/assets/img/agricultora-caña-objeto-1.png',
     ];
 
     let currentImageIndex = 0;
 
     //style for transition
     imageContainer.style.transition = 'background-image 0.9s ease-in-out';
-    imageContainer.style.cursor = 'pointer';
     
     //event listener for mouse in
     imageContainer.addEventListener('mouseover', () => {
