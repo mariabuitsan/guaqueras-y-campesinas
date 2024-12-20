@@ -1,8 +1,8 @@
 //load DOM
 document.addEventListener('DOMContentLoaded', function () {
-    //get the element
+    //get the element for images rotation
     const imageContainer = document.querySelector('.image-1-narracion');
-
+    // get the element for scrolling
     //array of images
     const imageArray = [
         'https://github.com/mariabuitsan/guaqueras-y-campesinas/blob/main/assets/img/agricultora-cafe-1.png?raw=true',
@@ -28,5 +28,12 @@ document.addEventListener('DOMContentLoaded', function () {
         currentImageIndex = (currentImageIndex + 1) % imageArray.length;
         imageContainer.style.backgroundImage = `url("${imageArray[currentImageIndex]}")`;
     });
-
+    
+    document.querySelector('.scroller').addEventListener('click', function() {
+         //Scroll down by one viewport height
+        window.scrollBy({
+          top: window.innerHeight,
+         behavior: 'smooth'  // Smooth scroll effect
+        });
+    });
 });
