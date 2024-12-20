@@ -1,24 +1,23 @@
 //load DOM
 document.addEventListener('DOMContentLoaded', function () {
     //get the element
-    const imageContainer = document.querySelector('.inside-image-1-narracion');
+    const imageContainer = document.querySelector('.image-1-narracion');
 
     //array of images
     const imageArray = [
-        '/Users/mariabuitragosanchez/Desktop/Fall-2024/Thesis/guaqueras-y-campesinas/assets/img/agricultora-cafe-1.png',
-        '/Users/mariabuitragosanchez/Desktop/Fall-2024/Thesis/guaqueras-y-campesinas/assets/img/agricultora-caña-objeto-1.png',
-        '/Users/mariabuitragosanchez/Desktop/Fall-2024/Thesis/guaqueras-y-campesinas/assets/img/agricultora-caña-objeto-1.png',
-        '/Users/mariabuitragosanchez/Desktop/Fall-2024/Thesis/guaqueras-y-campesinas/assets/img/agricultora-caña-objeto-1.png',
+        'https://github.com/mariabuitsan/guaqueras-y-campesinas/blob/main/assets/img/agricultora-cafe-1.png?raw=true',
+        'assets/img/SB-Recorrido-Foto-Cacao-7-2024.png',
+        'https://github.com/mariabuitsan/guaqueras-y-campesinas/blob/main/assets/img/agricultora-cafe-1.png?raw=true',
+        'https://github.com/mariabuitsan/guaqueras-y-campesinas/blob/main/assets/img/agricultora-cafe-1.png?raw=true',
     ];
 
     let currentImageIndex = 0;
 
     //style for transition
-    imageContainer.style.transition = 'background-image 0.9s ease-in-out';
+    imageContainer.style.transition = 'background-image 0.5s ease-in-out';
     
     //event listener for mouse in
     imageContainer.addEventListener('mouseover', () => {
-        imageContainer.style.boxShadow = '0 0 15px rgba(0, 255, 0, 0.7)';
         imageContainer.style.backgroundImage = `url("${imageArray[0]}")`;
     });
     //event listener for mouse out
