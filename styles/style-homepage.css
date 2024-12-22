@@ -186,7 +186,7 @@ button:hover{
 }
 .scroller{
   display: flex;
-  background-image: url("/assets/img/arrow_drop_down.png");
+  background-image: url("https://github.com/mariabuitsan/guaqueras-y-campesinas/blob/main/assets/img/arrow_drop_down.png?raw=true");
   width: 5em;
   height: 5em;
   margin-top: 0.5em;
@@ -306,7 +306,7 @@ h5{
 .grid-item {
   width: 200px;
   height: 200px;
-  background-image: url(/assets/img/mineria-casco-1.JPG);
+  background-image: url("https://raw.githubusercontent.com/mariabuitsan/guaqueras-y-campesinas/refs/heads/main/assets/img/mineria-casco-1.JPG");
   background-size: cover;
   align-self: center;
   justify-self: center;
