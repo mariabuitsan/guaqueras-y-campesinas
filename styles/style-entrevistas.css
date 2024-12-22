@@ -15,7 +15,7 @@ body{
     height: 100%;
 }
 .background-territorio{
-  background-image: url(/assets/img/background-caña-1.JPG);
+  background-image: url('https://github.com/mariabuitsan/guaqueras-y-campesinas/blob/main/assets/img/background-ca%C3%B1a-1.JPG?raw=true');
   background-size: cover;
   mix-blend-mode: luminosity;
   width: 75%;
@@ -41,6 +41,6 @@ h1{
     height: 750px;
     margin-top: 10px;
     margin-left: 25%;
-    background-image: url(/assets/img/agricultora-caña-objeto-1.png);
+    background-image: url('https://github.com/mariabuitsan/guaqueras-y-campesinas/blob/main/assets/img/agricultora-ca%C3%B1a-objeto-1.png?raw=true');
     background-size: cover;
 }
