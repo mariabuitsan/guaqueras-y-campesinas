@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anaheim&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap');
 html{
   height: 100%;
   width: 100%;
@@ -10,6 +11,8 @@ body{
   min-height: fit-content;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 .outter-container{
   flex: 1;
@@ -21,20 +24,19 @@ body{
 .titulo{
   padding: 1%;
   margin: 1%;
-  width: 100%;
 }
 h1{
-  width: 50%;
+  width: 70%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-self: flex-start;
   color: black;
-  font-family: Andika;
+  font-family: "Playwrite US Modern", serif;;
   font-size: 4vw;
   font-style: normal;
   font-weight: 350;
-  line-height: 1em;
+  line-height: 1.4em;
   text-transform: capitalize;
   padding: 1vh;
   margin-left: 5%;
@@ -42,13 +44,18 @@ h1{
   margin-top: 0.5%;
 }
 @media (max-width: 768px) {
-  .h1 {
-   width: 100%;
-   font-size: 4vw;
+  .titulo {
+   margin-left: 2%;
+  }
+  h1 {
+  width: 90%;
+  font-size: 6.3vw;
+  padding: 0;
+  line-height: 1.5em;
   }
 }
 .background-image{
-  background: url("https://raw.githubusercontent.com/mariabuitsan/guaqueras-y-campesinas/refs/heads/main/assets/img/background-1-fura-tena-resized-option-blanco-y-negro.jpeg");
+  background: url("/assets/img/background-3-fura-y-tena-resized.jpg");
   background-size: cover;
   width: 100%;
   min-height: fit-content;
@@ -92,6 +99,13 @@ li a {
 li a:hover{
   background-color: #830c9d;
 }
+@media (max-width: 768px) {
+  nav ul {
+    width: 100%;
+    font-size: 0.8em;
+    margin-top: 0.8em;
+  }
+}
 p{
   display: flex;
   flex-direction: row;
@@ -104,6 +118,14 @@ p{
   font-weight: 100;
   margin: 1%;
   padding: 1%;
+}
+@media (max-width: 768px) {
+  p {
+   width: 90%;
+   font-size: 1.15em;
+   line-height: 1em;
+   padding: 3%;
+  }
 }
 .inside-container{
   display: flex;
@@ -214,11 +236,18 @@ button:hover{
   margin-top: 0%;
   margin-left: 0%;
 }
+@media (max-width: 768px) {
+  .image-1-narracion {
+   width: 100%;
+   height: 50vh;
+   padding: 0;
+  }
+}
 .overlay{
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(98, 18, 179, 0.529);
+  background: rgba(106, 16, 196, 0.349);
   mix-blend-mode: color-burn;
   border-radius: 2.5rem;
   margin: 0;
@@ -230,14 +259,6 @@ button:hover{
     flex-direction: column; /* Stack columns vertically on smaller screens */
     height: auto; /* Allow content to take natural height */
   }
-
-  .image-1-narracion {
-    width: 80%; /* Image takes more space on small screens */
-    height: 50vh; /* Allow the height to scale with the image aspect ratio */
-  }
-  .p{
-    width: 100%;
-  }
 }
 .inside-container-3{
   display: flex;
@@ -245,10 +266,10 @@ button:hover{
   background: rgba(96, 7, 185, 0.40);
   width: 80%;
   min-height: 80vh;
-  border-radius: 2.5%;
+  border-radius: 2em;
   align-self: center;
   margin-left: 10%;
-  margin-top: 15%;
+  margin-top: 10%;
 }
 h6{
   color:white;
@@ -271,7 +292,7 @@ h5{
   font-weight: 200;
   padding-left: 8%;
   padding-right: 8%;
-  margin-bottom: 0%;
+  margin-bottom: 5%;
 }
 .grid-container-tools{
   display: grid;
@@ -294,7 +315,7 @@ h5{
 }
 @media (max-width: 768px) {
   .grid-container-tools {
-    grid-template-columns: repeat(2, 1fr); /* Show two items per row */
+    grid-template-columns: repeat(1, 1fr); /* Show one item per row */
   }
 }
 @media (max-width: 480px) {
@@ -331,22 +352,11 @@ h3{
   text-align: center;
   width: 100%;
 }
+.espacio-final{
+  width: 100vw;
+  height: 50vh;
+}
 .footer{
  display: flex;
  background: rgba(45, 115, 4, 0.8);
-}
-@media (max-width: 768px) {
-  nav ul {
-    width: 100%;
-  }
-  .narracion-1 {
-    width: 90%;
-    height: auto;
-  }
-  .catalogo {
-    grid-template-columns: 1fr 1fr; /* Two items per row on small screens */
-  }
-  .footer {
-    padding: 20px;
-  }
 }

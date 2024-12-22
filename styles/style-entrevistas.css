@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anaheim&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap');
 html{
   height: 100%;
   width: 100%;
@@ -7,6 +9,31 @@ html{
 body{
   height: 100vh;
   width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+nav{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: auto;
+  font-size: 1em;
+  padding: 1%;
+  background-color: #bc50b7;
+  font-family: Akshar;
+  font-weight: 25;
+  font-size: 1em;
+  align-items: flex-start;
+  justify-content: first baseline;
+  gap: 0.2em;
+}
+a{
+  text-decoration: none;
+  text-transform: none;
+  color: white;
+}
+a:hover{
+  background-color: #0c9d4b;
 }
 .container-outside-1{
     display: flex;
@@ -14,33 +41,128 @@ body{
     width: 100%;
     height: 100%;
 }
-.background-territorio{
-  background-image: url('https://github.com/mariabuitsan/guaqueras-y-campesinas/blob/main/assets/img/background-ca%C3%B1a-1.JPG?raw=true');
-  background-size: cover;
-  mix-blend-mode: luminosity;
-  width: 75%;
-  height: 100%;
-  border-radius: 5%;
-  opacity: 0.5;
+.contenido{
+  width: 35%;
+  height: 35vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .contenido{
+    width: 50vw;  /* Reduce background width even further */
+  }
 }
 h1{
+  width: 45vw;
   display:flex;
-  font-family: Anaheim;
-  font-size: 45px;
+  font-family: "Playwrite US Modern", serif;
+  font-size: 4vw;
   font-style: normal;
   font-weight: 250;
-  line-height: 50px;
-  margin-top: 1%;
+  line-height: 7.5vh;
+  margin-top: 0.5%;
   padding: 5%;
   
 }
+.overlay{
+  z-index: 3;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://github.com/mariabuitsan/guaqueras-y-campesinas/blob/main/assets/img/background-ca%C3%B1a-1.JPG?raw=true');
+  background-size: cover;
+  opacity: 0.5;
+}
 .profile-image{
-    z-index: 1;
-    position: absolute;
-    width: 750px;
-    height: 750px;
-    margin-top: 10px;
-    margin-left: 25%;
+    z-index: 5;
+    position:relative;
+    width: 80vw;
+    height: 100vh;
+    margin-top: 0;
+    margin-left: 0;
     background-image: url('https://github.com/mariabuitsan/guaqueras-y-campesinas/blob/main/assets/img/agricultora-ca%C3%B1a-objeto-1.png?raw=true');
     background-size: cover;
+}
+.background-territorio{
+  display: grid;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 2.5em;
+}
+
+h5{
+  width: 75%;
+  font-family: Akshar;
+  color: black;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  font-weight: 200;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-bottom: 3%;
+  margin: 0;
+}
+.audio-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 20px;
+  width: 15%;
+  margin-left: 5em;
+}
+
+.play-button {
+  background-color: #bc50b7;
+  border: none;
+  color: white;
+  padding: 15% 25%;
+  text-align: center;
+  font-family: Akshar;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.play-button:hover {
+  background-color: #45a049;
+}
+@media (max-width: 768px) {
+  .background-territorio {
+    width: 100vw;  /* Reduce background width even further */
+  }
+
+  h1 {
+    font-size: 8vw;  /* Smaller font size on mobile devices */
+    padding: 2%;
+    margin-top: 3%;  /* Adjust margin-top for smaller screens */
+    line-height: 1em;
+  }
+  h5 {
+    font-size: 1em;
+    width: 80%;
+  }
+  .profile-image {
+    margin-left: 0;  /* Further adjust margin */
+    height: 80vh;
+    width: 100vw;
+    justify-self: center;
+    align-self: center;
+  }
+  .audio-container {
+    width: 30vw;  /* Smaller container for mobile screens */
+    padding: 1em;  /* Adjust padding for phones */
+    margin: 0;
+  }
+
+  .play-button {
+    padding: 10% 20%;  /* Smaller button padding for phones */
+    font-size: 0.8em;  /* Smaller font size for phones */
+    width: 100%;  /* Make button full width for easier tapping on mobile */
+  }
 }
