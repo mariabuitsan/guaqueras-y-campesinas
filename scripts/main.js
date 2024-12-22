@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function () {
     //array of images
     const imageArray = [
         'https://github.com/mariabuitsan/guaqueras-y-campesinas/blob/main/assets/img/agricultora-cafe-1.png?raw=true',
-        'assets/img/SB-Recorrido-Foto-Cacao-7-2024.png',
-        'https://github.com/mariabuitsan/guaqueras-y-campesinas/blob/main/assets/img/agricultora-cafe-1.png?raw=true',
+        'https://github.com/mariabuitsan/guaqueras-y-campesinas/blob/main/assets/img/SB-Recorrido-Foto-Cacao-7-2024.png?raw=true',
+        'https://github.com/mariabuitsan/guaqueras-y-campesinas/blob/main/assets/img/agricultora-ca%C3%B1a-objeto-1.png?raw=true',
         'https://github.com/mariabuitsan/guaqueras-y-campesinas/blob/main/assets/img/agricultora-cafe-1.png?raw=true',
     ];
 
