@@ -55,7 +55,7 @@ h1{
   }
 }
 .background-image{
-  background: url("/assets/img/background-3-fura-y-tena-resized.jpg");
+  background: url("https://raw.githubusercontent.com/mariabuitsan/guaqueras-y-campesinas/refs/heads/main/assets/img/background-3-fura-y-tena-resized.jpg");
   background-size: cover;
   width: 100%;
   min-height: fit-content;
