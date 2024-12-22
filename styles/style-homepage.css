@@ -160,13 +160,13 @@ p{
   margin-right: 15%;
   margin-left: 10%;
 }
-button{
+.button-1{
   width: 8em;
   display: flex;
   flex-direction: row;
   color: white;
   padding: 0.5em 1em;
-  gap: 0.5em;
+  gap: 0.3em;
   align-self: stretch;
   justify-content: center;
   align-content: center;
@@ -178,7 +178,7 @@ button{
   font-size: medium;
   font-family: Akshar;
   margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 button:hover{
   background-color: #830c9d;
@@ -189,7 +189,7 @@ button:hover{
   background-image: url("https://github.com/mariabuitsan/guaqueras-y-campesinas/blob/main/assets/img/arrow_drop_down.png?raw=true");
   width: 5em;
   height: 5em;
-  margin-top: 0.5em;
+  margin-top: 0;
   margin-left: 1em;
   transform: translateX(-50%);
   cursor: pointer;
@@ -280,6 +280,36 @@ h6{
   justify-self: center;
   padding: 0%;
   margin: 0%;
+}
+h4{
+  color:black;
+  font-size: 1em;
+  font-family: Akshar;
+  font-weight: 50;
+  align-self: self-start;
+  justify-self: self-start;
+  padding: 1%;
+  margin: 1%;
+}
+h2{
+  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-self: flex-start;
+  color: white;
+  background-color: rgba(140, 67, 213, 0.72);
+  mix-blend-mode: color-burn;
+  font-family: "Playwrite US Modern", serif;;
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 0.8em;
+  text-transform: capitalize;
+  padding: 2vh;
+  margin-left: 5%;
+  margin-bottom: 0%;
+  margin-top: 0.5%;
 }
 i{
   margin-left: 3%;

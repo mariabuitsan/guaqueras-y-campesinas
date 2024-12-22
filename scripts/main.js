@@ -28,12 +28,16 @@ document.addEventListener('DOMContentLoaded', function () {
         currentImageIndex = (currentImageIndex + 1) % imageArray.length;
         imageContainer.style.backgroundImage = `url("${imageArray[currentImageIndex]}")`;
     });
-    
     document.querySelector('.scroller').addEventListener('click', function() {
          //Scroll down by one viewport height
         window.scrollBy({
           top: window.innerHeight,
          behavior: 'smooth'  // Smooth scroll effect
         });
+    });
+      
+    document.getElementById("transcripcion").addEventListener("click", function() {
+        // Redirect to the new HTML page
+        window.location.href = 'template.html';  // Change 'newpage.html' to your target page's filename
     });
 });
