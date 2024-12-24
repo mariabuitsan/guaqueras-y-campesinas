@@ -189,7 +189,7 @@ button:hover{
 }
 .scroller{
   display: flex;
-  background-image: url(/assets/img/green-arrow-2.svg);
+  background-image: url("https://raw.githubusercontent.com/mariabuitsan/guaqueras-y-campesinas/01f67cf707d86acf9e605256fe0065ce8a7360b6/assets/img/green-arrow-2.svg");
   background-size: cover;
   width: 5.1em;
   height: 3.5em;
