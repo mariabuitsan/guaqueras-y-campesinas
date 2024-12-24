@@ -299,6 +299,7 @@ button:hover{
 @media (max-width: 480px) {
   .overlay-2 {
     margin-top: 0; /* Stack items on very small screens */
+    mix-blend-mode: normal;
   }
 }
 h6{
