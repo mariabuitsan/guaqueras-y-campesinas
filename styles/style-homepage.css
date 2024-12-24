@@ -55,7 +55,7 @@ h1{
   }
 }
 .background-image{
-  background: url(/assets/img/background-1-fura-y-tena-blanco-negro.JPG);
+  background: url("https://raw.githubusercontent.com/mariabuitsan/guaqueras-y-campesinas/refs/heads/main/assets/img/background-1-fura-y-tena-blanco-negro.JPG");
   color: black;
   background-size: cover;
   width: 100%;
@@ -270,7 +270,7 @@ button:hover{
   display: flex;
   flex-direction: column;
   position: relative;
-  background: url(/assets/img/background-2-fura-y-tena-resized\ 2.jpg);
+  background: url("https://raw.githubusercontent.com/mariabuitsan/guaqueras-y-campesinas/refs/heads/main/assets/img/background-2-fura-y-tena-resized%202.jpg");
   background-size: cover; 
   width: 90%;
   min-height: 80vh;
