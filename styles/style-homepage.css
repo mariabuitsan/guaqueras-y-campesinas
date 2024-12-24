@@ -189,10 +189,11 @@ button:hover{
 }
 .scroller{
   display: flex;
-  background-image: url("/assets/img/arrow-down-white.svg");
-  width: 3em;
-  height: 3em;
-  margin-top: 2%;
+  background-image: url(/assets/img/green-arrow-2.svg);
+  background-size: cover;
+  width: 5.1em;
+  height: 3.5em;
+  margin-top: 5%;
   margin-left: 1em;
   transform: translateX(-50%);
   cursor: pointer;
@@ -314,6 +315,7 @@ h6{
 }
 h4{
   color:black;
+  width: 20%;
   font-size: 1em;
   font-family: Akshar;
   font-weight: 50;
@@ -322,8 +324,14 @@ h4{
   padding: 1%;
   margin: 1%;
 }
+@media (max-width: 480px) {
+  h4 {
+    width: 100%; /* Stack items on very small screens */
+  }
+}
 h2{
-  width: 25%;
+  width: 15%;
+  height: fit-content;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -362,6 +370,7 @@ h5{
   mix-blend-mode: hard-light;
   height: fit-content;
   padding: 5%;
+  width: 80%;
 }
 .grid-container-tools{
   display: grid;

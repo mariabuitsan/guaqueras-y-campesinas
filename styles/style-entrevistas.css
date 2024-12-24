@@ -15,7 +15,7 @@ body{
 .nav-2{
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 15vw;
   min-height: auto;
   font-size: 1em;
   padding: 1%;
@@ -37,9 +37,10 @@ a{
   text-transform: none;
   color: white;
 }
-a:hover{
-  background-color: #0c9d4b;
-}
+a:hover{ 
+  color: #830c9d;
+  box-shadow: rgba(244, 240, 181, 0.535); 
+} 
 .container-outside-1{
     display: flex;
     flex-direction: row;
@@ -76,13 +77,13 @@ a:hover{
   }
 }
 h1{
-  width: 60vw;
+  width: 80vw;
   display:flex;
   font-family: "Playwrite US Modern", serif;
-  font-size: 3vw;
+  font-size: 2.5vw;
   font-style: normal;
   font-weight: 250;
-  line-height: 5vh;
+  line-height: 7vh;
   margin-top: 0.5%;
   padding: 5%;
   
@@ -90,19 +91,24 @@ h1{
 .clickable-region {
   position: absolute;
   display: flex;
-  top: 310px;
+  top: 327px;
   left: 630px;
-  width: 180px;
-  height: 165px;
+  width: 185px;
+  height: 155px;
   background: rgba(240, 238, 238, 0);
   cursor: pointer;
   z-index: 6;
   border-radius: 100%;
 }
 .clickable-region:hover{
-  box-shadow: 10px 10px 10px 25px rgba(244, 240, 181, 0.535) ;
+  box-shadow: 5px 20px 15px 50px rgba(244, 240, 181, 0.535) ;
 }
 @media (max-width: 768px) {
+  .clickable-region{
+    display: none;
+  }
+}
+@media (max-width: 480px) {
   .clickable-region{
     display: none;
   }
@@ -110,24 +116,11 @@ h1{
 .overlay{
   z-index: 3;
   position: absolute;
-  width: 100vw;
+  width: 80%;
   height: 100vh;
   background-image: url('https://github.com/mariabuitsan/guaqueras-y-campesinas/blob/main/assets/img/background-ca%C3%B1a-1.JPG?raw=true');
   background-size: cover;
   opacity: 0.5;
-}
-.dialogue-box{
-  display: none;
-  position: absolute;
-  top: 10px;
-  left: 1290px;
-  width: 35em;
-  height: 25em;
-  background:  rgba(45, 115, 4, 0.7);
-  backdrop-filter: blur(3px);
-  mix-blend-mode: hard-light;
-  z-index: 3;
-  border-radius: 3em;
 }
 .profile-image{
     z-index: 5;
@@ -187,10 +180,10 @@ h5{
   }
 
   h1 {
-    font-size: 8vw;  /* Smaller font size on mobile devices */
+    font-size: 5vw;  /* Smaller font size on mobile devices */
     padding: 2%;
     margin-top: 3%;  /* Adjust margin-top for smaller screens */
-    line-height: 1em;
+    line-height: 1.4em;
   }
   h5 {
     font-size: 1em;
@@ -214,4 +207,53 @@ h5{
     font-size: 0.8em;  /* Smaller font size for phones */
     width: 100%;  /* Make button full width for easier tapping on mobile */
   }
+}
+#inside-container-objetos{
+    flex: 1;
+    width: 100%;
+    min-height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  @media (max-width: 768px) {
+    .inside-container-objetos {
+      flex-direction: column;
+    }
+}
+.image-objeto-slider{
+  width: 45em;
+  height: 30em;
+  position: relative;
+  overflow: hidden;
+  background-image: url(/assets/img/objeto-1-agricultura-caña-cusbira.png);
+  background-size: cover;
+  transition: transform 0.5s ease-in-out;
+  margin: 0;
+  cursor: pointer;
+}
+.low-vision-2{
+  color: aliceblue;
+  background:  rgba(45, 115, 4, 0.9);
+  backdrop-filter: blur(2px);;
+  mix-blend-mode: hard-light;
+  height: fit-content;
+  padding: 5%;
+  width: 30%;
+}
+#hide-content{
+  width: 15em;
+  height: fit-content;
+  border: none;
+  margin-top: 0.15em;
+  font-size: 4em;
+  /* color: #830c9d; */
+  color: rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  mix-blend-mode: screen;
+  opacity: 100%;
+}
+#hide-content:hover{
+  box-shadow: rgba(244, 240, 181, 0.535);
 }
