@@ -57,16 +57,31 @@ a:hover{
   }
 }
 h1{
-  width: 45vw;
+  width: 60vw;
   display:flex;
   font-family: "Playwrite US Modern", serif;
-  font-size: 4vw;
+  font-size: 3vw;
   font-style: normal;
   font-weight: 250;
-  line-height: 7.5vh;
+  line-height: 5vh;
   margin-top: 0.5%;
   padding: 5%;
   
+}
+.clickable-region {
+  position: absolute;
+  display: flex;
+  top: 310px;
+  left: 630px;
+  width: 180px;
+  height: 165px;
+  background: rgba(240, 238, 238, 0);
+  cursor: pointer;
+  z-index: 6;
+  border-radius: 100%;
+}
+.clickable-region:hover{
+  box-shadow: 10px 10px 10px 25px rgba(244, 240, 181, 0.535) ;
 }
 .overlay{
   z-index: 3;
@@ -76,6 +91,16 @@ h1{
   background-image: url('https://github.com/mariabuitsan/guaqueras-y-campesinas/blob/main/assets/img/background-ca%C3%B1a-1.JPG?raw=true');
   background-size: cover;
   opacity: 0.5;
+}
+.dialogue-box{
+  isolation: isolate;
+  display: flex;
+  position: absolute;
+  top: 10px;
+  left: 630px;
+  width: 35em;
+  height: 25em;
+  background-color: #45a049;
 }
 .profile-image{
     z-index: 5;
@@ -94,19 +119,19 @@ h1{
   height: 100%;
   border-radius: 2.5em;
 }
-
 h5{
   width: 75%;
   font-family: Akshar;
   color: black;
   font-size: 1.5em;
-  line-height: 1.2em;
+  line-height: 1.5em;
   font-weight: 200;
   padding-left: 8%;
   padding-right: 8%;
   padding-bottom: 3%;
   margin: 0;
 }
+
 .audio-container {
   display: flex;
   align-items: center;
@@ -117,7 +142,6 @@ h5{
   width: 15%;
   margin-left: 5em;
 }
-
 .play-button {
   background-color: #bc50b7;
   border: none;
@@ -128,7 +152,6 @@ h5{
   font-size: 1em;
   cursor: pointer;
 }
-
 .play-button:hover {
   background-color: #45a049;
 }

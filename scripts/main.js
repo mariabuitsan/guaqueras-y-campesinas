@@ -38,6 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
       
     document.getElementById("transcripcion").addEventListener("click", function() {
         // Redirect to the new HTML page
-        window.location.href = 'template.html';  // Change 'newpage.html' to your target page's filename
+        window.location.href = 'entrevistas.html';  // Change 'newpage.html' to your target page's filename
     });
 });
