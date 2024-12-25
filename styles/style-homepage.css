@@ -471,8 +471,7 @@ h5{
   align-items: center;
   text-align: center;
   margin-top: 5%;
-}
-.button-2{
+}.button-2{
   width: 8em;
   margin: 2%;
   padding: 0.5em 1em;
@@ -515,7 +514,7 @@ h3{
   height: 25%;
   margin-top: 3em;
   padding: 5%;
-  background-image: url(/assets/img/background-4-cecropia-peltata-blanco-y-negro.JPG);
+  background-image: url("https://github.com/mariabuitsan/guaqueras-y-campesinas/blob/main/assets/img/background-4-cecropia-peltata-blanco-y-negro.JPG?raw=true");
 }
 .intro{
   display: flex;
