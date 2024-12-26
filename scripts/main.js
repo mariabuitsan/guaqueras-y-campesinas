@@ -69,6 +69,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
         let hideStory = document.querySelector('.intro');
         hideStory.style.display = "none";
+
+        let hideCatalogo = document.querySelector('.catalogo');
+        hideCatalogo.style.display = "none";
         //change div to display
         let showAbout = document.getElementById("about");
         showAbout.style.display = "block";
