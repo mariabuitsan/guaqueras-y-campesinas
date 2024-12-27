@@ -126,6 +126,7 @@ li a:hover{
   width: 10em;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   color: white;
   padding: 0.5em 1em;
   gap: 0.3em;
@@ -550,6 +551,11 @@ h3{
   .explicacion-1{
     min-height: fit-content;
   }
+}
+.overlay-3{
+  mix-blend-mode: exclusion;
+  width: 100%;
+  height: 100%;
 }
 .intro{
   display: flex;
