@@ -70,11 +70,31 @@ document.addEventListener('DOMContentLoaded', function () {
         let hideStory = document.querySelector('.intro');
         hideStory.style.display = "none";
 
+        let hideParagraph = document.querySelector('p');
+        hideParagraph.style.display = "none";
+
         let hideCatalogo = document.querySelector('.catalogo');
         hideCatalogo.style.display = "none";
         //change div to display
         let showAbout = document.getElementById("about");
         showAbout.style.display = "block";
+    });
+    document.getElementById("show-team").addEventListener('click', function() {
+        //hide things
+        let hidePhoto = document.querySelector('.image-1-narracion');
+        hidePhoto.style.display = "none";
+
+        let hideStory = document.querySelector('.intro');
+        hideStory.style.display = "none";
+
+        let hideParagraph = document.querySelector('p');
+        hideParagraph.style.display = "none";
+
+        let hideCatalogo = document.querySelector('.catalogo');
+        hideCatalogo.style.display = "none";
+        //change div to display
+        let showTeam = document.getElementById("team");
+        showTeam.style.display = "block";
     });
 });
  

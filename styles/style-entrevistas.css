@@ -143,13 +143,13 @@ h5{
   width: 75%;
   font-family: Akshar;
   color: black;
-  font-size: 1.5em;
+  font-size: 1em;
   line-height: 1.5em;
   font-weight: 200;
   padding-left: 8%;
   padding-right: 8%;
   padding-bottom: 3%;
-  margin: 0;
+  margin-top: 7%;
 }
 .audio-container {
   display: flex;
@@ -256,4 +256,16 @@ h5{
 }
 #hide-content:hover{
   box-shadow: rgba(244, 240, 181, 0.535);
+}
+h6{
+  color:aliceblue;
+  background: #830c9d;
+  backdrop-filter: blur(2px);
+  font-size: 0.69em;
+  font-family: "Playwrite US Modern", serif;
+  font-weight: 100;
+  align-self: center;
+  justify-self: center;
+  padding: 0.8%;
+  margin: 0;
 }
