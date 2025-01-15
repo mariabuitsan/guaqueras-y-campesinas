@@ -311,9 +311,10 @@ button:hover{
   .narracion-1 {
     flex-direction: column; /* Stack columns vertically on smaller screens */
     height: auto; /* Allow content to take natural height */
+    margin-top: 40%;
   }
     .overlay {
-    mix-blend-mode: difference;
+    mix-blend-mode: lighten;
   }
 }
 .inside-container-3{
