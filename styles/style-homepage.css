@@ -437,7 +437,7 @@ h5{
 .grid-item {
   width: 200px;
   height: 200px;
-  background-image: url("/assets/img/guaqueras-coscuez.png");
+  background-image: url("https://github.com/mariabuitsan/guaqueras-y-campesinas/blob/main/assets/img/guaqueras-coscuez.png?raw=true");
   background-size: cover;
   align-self: center;
   justify-self: center;
