@@ -92,6 +92,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         let hideCatalogo = document.querySelector('.catalogo');
         hideCatalogo.style.display = "none";
+
+        let hideGrid = document.querySelector('.grid-container-tools');
+        hideGrid.style.display = "none";
+
         //change div to display
         let showTeam = document.getElementById("team");
         showTeam.style.display = "block";
