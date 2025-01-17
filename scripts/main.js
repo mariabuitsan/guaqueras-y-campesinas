@@ -1,4 +1,4 @@
-import {objectsCollection} from './objectsArray.js';
+import { profileArray } from './profileArray.js';
 //load DOM
 document.addEventListener('DOMContentLoaded', function () {
     //get the element for images rotation
@@ -43,24 +43,24 @@ document.addEventListener('DOMContentLoaded', function () {
         });
    });
     let changePhoto = document.getElementById("grid-item-2");
-    currentImageIndex = (currentImageIndex + 0) % objectsCollection.length;
-    changePhoto.style.backgroundImage = `url("${objectsCollection[currentImageIndex]}")`;
+    currentImageIndex = (currentImageIndex + 0) % profileArray.length;
+    changePhoto.style.backgroundImage = `url("${profileArray[currentImageIndex]}")`;
 
     let changePhoto2 = document.getElementById("grid-item-3");
-    currentImageIndex = (currentImageIndex + 1) % objectsCollection.length;
-    changePhoto2.style.backgroundImage = `url("${objectsCollection[currentImageIndex]}")`;
+    currentImageIndex = (currentImageIndex + 1) % profileArray.length;
+    changePhoto2.style.backgroundImage = `url("${profileArray[currentImageIndex]}")`;
 
     let changePhoto3 = document.getElementById("grid-item-4");
-    currentImageIndex = (currentImageIndex + 2) % objectsCollection.length;
-    changePhoto3.style.backgroundImage = `url("${objectsCollection[currentImageIndex]}")`;
+    currentImageIndex = (currentImageIndex + 2) % profileArray.length;
+    changePhoto3.style.backgroundImage = `url("${profileArray[currentImageIndex]}")`;
 
     let changePhoto4 = document.getElementById("grid-item-5");
-    currentImageIndex = (currentImageIndex + 3) % objectsCollection.length;
-    changePhoto4.style.backgroundImage = `url("${objectsCollection[currentImageIndex]}")`;
+    currentImageIndex = (currentImageIndex + 4) % profileArray.length;
+    changePhoto4.style.backgroundImage = `url("${profileArray[currentImageIndex]}")`;
 
     let changePhoto5 = document.getElementById("grid-item-6");
-    currentImageIndex = (currentImageIndex + 4) % objectsCollection.length;
-    changePhoto5.style.backgroundImage = `url("${objectsCollection[currentImageIndex]}")`;
+    currentImageIndex = (currentImageIndex + 7) % profileArray.length;
+    changePhoto5.style.backgroundImage = `url("${profileArray[currentImageIndex]}")`;
 
     document.getElementById("show-about").addEventListener('click', function() {
         //hide things
